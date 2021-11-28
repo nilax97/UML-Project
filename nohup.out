@@ -1,0 +1,86 @@
+[I 21:31:28.565 NotebookApp] [nb_conda_kernels] enabled, 1 kernels found
+[W 2021-11-28 21:31:30.568 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[W 2021-11-28 21:31:30.571 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-11-28 21:31:30.571 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-11-28 21:31:30.571 LabApp] 'password_required' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-11-28 21:31:30.571 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-11-28 21:31:30.571 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-11-28 21:31:30.571 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
+[W 2021-11-28 21:31:30.572 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
+[I 2021-11-28 21:31:30.579 LabApp] JupyterLab extension loaded from /opt/conda/lib/python3.7/site-packages/jupyterlab
+[I 2021-11-28 21:31:30.579 LabApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
+[I 21:31:30.671 NotebookApp] [Jupytext Server Extension] Deriving a JupytextContentsManager from LargeFileManager
+[I 21:31:30.675 NotebookApp] [nb_conda] enabled
+/opt/conda/lib/python3.7/site-packages/jupyter_server_mathjax/app.py:40: FutureWarning: The alias `_()` will be deprecated. Use `_i18n()` instead.
+  help=_("""The MathJax.js configuration file that is to be used."""),
+[I 21:31:30.728 NotebookApp] Serving notebooks from local directory: /home/agarwal_nilaksh_gmail_com/UML-Project
+[I 21:31:30.728 NotebookApp] Jupyter Notebook 6.4.6 is running at:
+[I 21:31:30.728 NotebookApp] http://instance-1:8888/
+[I 21:31:30.728 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[I 21:31:33.486 NotebookApp] 302 GET / (158.222.156.187) 0.880000ms
+[W 21:31:38.792 NotebookApp] Notebook nilaksh.ipynb is not trusted
+[I 21:31:39.559 NotebookApp] Kernel started: a0973aba-0f20-48eb-8cb3-6821e584dd9c, name: python3
+[I 21:33:39.655 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:33:39.656 NotebookApp] Saving nilaksh.ipynb
+[W 21:33:39.658 NotebookApp] Notebook nilaksh.ipynb is not trusted
+[I 21:35:39.688 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:35:39.689 NotebookApp] Saving nilaksh.ipynb
+[W 21:35:39.689 NotebookApp] Notebook nilaksh.ipynb is not trusted
+2021-11-28 21:35:49.774104: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 21:35:50.270313: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+[I 21:37:39.622 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:37:39.623 NotebookApp] Saving nilaksh.ipynb
+[W 21:37:39.623 NotebookApp] Notebook nilaksh.ipynb is not trusted
+[I 21:39:39.616 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:39:39.617 NotebookApp] Saving nilaksh.ipynb
+[W 21:39:39.618 NotebookApp] Notebook nilaksh.ipynb is not trusted
+[I 21:41:39.622 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:41:39.623 NotebookApp] Saving nilaksh.ipynb
+[I 21:43:39.673 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:43:39.674 NotebookApp] Saving nilaksh.ipynb
+[I 21:45:39.668 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:45:39.669 NotebookApp] Saving nilaksh.ipynb
+[I 21:47:39.662 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:47:39.662 NotebookApp] Saving nilaksh.ipynb
+[I 21:49:39.641 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:49:39.642 NotebookApp] Saving nilaksh.ipynb
+2021-11-28 21:50:32.554458: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+[I 21:51:17.867 NotebookApp] Kernel interrupted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
+[I 21:51:39.667 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:51:39.667 NotebookApp] Saving nilaksh.ipynb
+[I 21:52:49.946 NotebookApp] Kernel interrupted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
+[I 21:53:39.656 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:53:39.657 NotebookApp] Saving nilaksh.ipynb
+[I 21:55:39.635 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:55:39.635 NotebookApp] Saving nilaksh.ipynb
+[I 21:55:52.946 NotebookApp] Kernel interrupted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
+[I 21:56:42.021 NotebookApp] Kernel interrupted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
+[I 21:57:39.638 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:57:39.639 NotebookApp] Saving nilaksh.ipynb
+[I 21:58:13.256 NotebookApp] Starting buffering for a0973aba-0f20-48eb-8cb3-6821e584dd9c:c190cdd9062046648c6acb1eab29caab
+[I 21:58:17.582 NotebookApp] Kernel restarted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
+[I 21:58:17.892 NotebookApp] Restoring connection for a0973aba-0f20-48eb-8cb3-6821e584dd9c:c190cdd9062046648c6acb1eab29caab
+[I 21:58:18.400 NotebookApp] Replaying 6 buffered messages
+2021-11-28 21:59:36.281496: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 21:59:36.772422: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+[I 21:59:39.646 NotebookApp] Saving file at /nilaksh.ipynb
+[I 21:59:39.647 NotebookApp] Saving nilaksh.ipynb
+2021-11-28 22:01:05.060879: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+[I 22:01:39.646 NotebookApp] Saving file at /nilaksh.ipynb
+[I 22:01:39.647 NotebookApp] Saving nilaksh.ipynb
+[I 22:03:41.450 NotebookApp] Saving file at /nilaksh.ipynb
+[I 22:03:41.451 NotebookApp] Saving nilaksh.ipynb
+[I 22:04:57.170 NotebookApp] Starting buffering for a0973aba-0f20-48eb-8cb3-6821e584dd9c:c190cdd9062046648c6acb1eab29caab
+[I 22:05:01.393 NotebookApp] Kernel restarted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
+[I 22:05:01.554 NotebookApp] Restoring connection for a0973aba-0f20-48eb-8cb3-6821e584dd9c:c190cdd9062046648c6acb1eab29caab
+[I 22:05:02.071 NotebookApp] Replaying 3 buffered messages
+2021-11-28 22:05:31.301316: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 22:05:31.794169: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-11-28 22:05:34.673186: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+[I 22:05:39.712 NotebookApp] Saving file at /nilaksh.ipynb
+[I 22:05:39.713 NotebookApp] Saving nilaksh.ipynb
+[I 22:06:57.495 NotebookApp] Saving file at /nilaksh.ipynb
+[I 22:06:57.496 NotebookApp] Saving nilaksh.ipynb
