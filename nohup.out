@@ -1,86 +1,537 @@
-[I 21:31:28.565 NotebookApp] [nb_conda_kernels] enabled, 1 kernels found
-[W 2021-11-28 21:31:30.568 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
-[W 2021-11-28 21:31:30.571 LabApp] 'allow_origin' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2021-11-28 21:31:30.571 LabApp] 'ip' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2021-11-28 21:31:30.571 LabApp] 'password_required' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2021-11-28 21:31:30.571 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2021-11-28 21:31:30.571 LabApp] 'port' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2021-11-28 21:31:30.571 LabApp] 'password' has moved from NotebookApp to ServerApp. This config will be passed to ServerApp. Be sure to update your config before our next release.
-[W 2021-11-28 21:31:30.572 LabApp] Config option `kernel_spec_manager_class` not recognized by `LabApp`.
-[I 2021-11-28 21:31:30.579 LabApp] JupyterLab extension loaded from /opt/conda/lib/python3.7/site-packages/jupyterlab
-[I 2021-11-28 21:31:30.579 LabApp] JupyterLab application directory is /opt/conda/share/jupyter/lab
-[I 21:31:30.671 NotebookApp] [Jupytext Server Extension] Deriving a JupytextContentsManager from LargeFileManager
-[I 21:31:30.675 NotebookApp] [nb_conda] enabled
-/opt/conda/lib/python3.7/site-packages/jupyter_server_mathjax/app.py:40: FutureWarning: The alias `_()` will be deprecated. Use `_i18n()` instead.
-  help=_("""The MathJax.js configuration file that is to be used."""),
-[I 21:31:30.728 NotebookApp] Serving notebooks from local directory: /home/agarwal_nilaksh_gmail_com/UML-Project
-[I 21:31:30.728 NotebookApp] Jupyter Notebook 6.4.6 is running at:
-[I 21:31:30.728 NotebookApp] http://instance-1:8888/
-[I 21:31:30.728 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
-[I 21:31:33.486 NotebookApp] 302 GET / (158.222.156.187) 0.880000ms
-[W 21:31:38.792 NotebookApp] Notebook nilaksh.ipynb is not trusted
-[I 21:31:39.559 NotebookApp] Kernel started: a0973aba-0f20-48eb-8cb3-6821e584dd9c, name: python3
-[I 21:33:39.655 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:33:39.656 NotebookApp] Saving nilaksh.ipynb
-[W 21:33:39.658 NotebookApp] Notebook nilaksh.ipynb is not trusted
-[I 21:35:39.688 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:35:39.689 NotebookApp] Saving nilaksh.ipynb
-[W 21:35:39.689 NotebookApp] Notebook nilaksh.ipynb is not trusted
-2021-11-28 21:35:49.774104: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:51.295816: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:51.295869: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:51.295887: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:51.296029: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:51.296065: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:51.296598: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2021-11-28 21:35:50.270313: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
-[I 21:37:39.622 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:37:39.623 NotebookApp] Saving nilaksh.ipynb
-[W 21:37:39.623 NotebookApp] Notebook nilaksh.ipynb is not trusted
-[I 21:39:39.616 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:39:39.617 NotebookApp] Saving nilaksh.ipynb
-[W 21:39:39.618 NotebookApp] Notebook nilaksh.ipynb is not trusted
-[I 21:41:39.622 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:41:39.623 NotebookApp] Saving nilaksh.ipynb
-[I 21:43:39.673 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:43:39.674 NotebookApp] Saving nilaksh.ipynb
-[I 21:45:39.668 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:45:39.669 NotebookApp] Saving nilaksh.ipynb
-[I 21:47:39.662 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:47:39.662 NotebookApp] Saving nilaksh.ipynb
-[I 21:49:39.641 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:49:39.642 NotebookApp] Saving nilaksh.ipynb
-2021-11-28 21:50:32.554458: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
-[I 21:51:17.867 NotebookApp] Kernel interrupted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
-[I 21:51:39.667 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:51:39.667 NotebookApp] Saving nilaksh.ipynb
-[I 21:52:49.946 NotebookApp] Kernel interrupted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
-[I 21:53:39.656 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:53:39.657 NotebookApp] Saving nilaksh.ipynb
-[I 21:55:39.635 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:55:39.635 NotebookApp] Saving nilaksh.ipynb
-[I 21:55:52.946 NotebookApp] Kernel interrupted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
-[I 21:56:42.021 NotebookApp] Kernel interrupted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
-[I 21:57:39.638 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:57:39.639 NotebookApp] Saving nilaksh.ipynb
-[I 21:58:13.256 NotebookApp] Starting buffering for a0973aba-0f20-48eb-8cb3-6821e584dd9c:c190cdd9062046648c6acb1eab29caab
-[I 21:58:17.582 NotebookApp] Kernel restarted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
-[I 21:58:17.892 NotebookApp] Restoring connection for a0973aba-0f20-48eb-8cb3-6821e584dd9c:c190cdd9062046648c6acb1eab29caab
-[I 21:58:18.400 NotebookApp] Replaying 6 buffered messages
-2021-11-28 21:59:36.281496: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+2021-11-28 23:25:51.401343: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:53.239167: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:53.239295: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:53.239333: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:53.239563: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:53.239657: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:53.240185: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2021-11-28 21:59:36.772422: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
-[I 21:59:39.646 NotebookApp] Saving file at /nilaksh.ipynb
-[I 21:59:39.647 NotebookApp] Saving nilaksh.ipynb
-2021-11-28 22:01:05.060879: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
-[I 22:01:39.646 NotebookApp] Saving file at /nilaksh.ipynb
-[I 22:01:39.647 NotebookApp] Saving nilaksh.ipynb
-[I 22:03:41.450 NotebookApp] Saving file at /nilaksh.ipynb
-[I 22:03:41.451 NotebookApp] Saving nilaksh.ipynb
-[I 22:04:57.170 NotebookApp] Starting buffering for a0973aba-0f20-48eb-8cb3-6821e584dd9c:c190cdd9062046648c6acb1eab29caab
-[I 22:05:01.393 NotebookApp] Kernel restarted: a0973aba-0f20-48eb-8cb3-6821e584dd9c
-[I 22:05:01.554 NotebookApp] Restoring connection for a0973aba-0f20-48eb-8cb3-6821e584dd9c:c190cdd9062046648c6acb1eab29caab
-[I 22:05:02.071 NotebookApp] Replaying 3 buffered messages
-2021-11-28 22:05:31.301316: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:53.433743: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:53.434006: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:53.434075: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:53.434339: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:53.434480: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:53.434959: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
-2021-11-28 22:05:31.794169: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
-2021-11-28 22:05:34.673186: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
-[I 22:05:39.712 NotebookApp] Saving file at /nilaksh.ipynb
-[I 22:05:39.713 NotebookApp] Saving nilaksh.ipynb
-[I 22:06:57.495 NotebookApp] Saving file at /nilaksh.ipynb
-[I 22:06:57.496 NotebookApp] Saving nilaksh.ipynb
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:53.760415: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:53.760597: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:53.760664: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:53.760885: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:53.761001: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:53.761412: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:25:53.775234: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:25:54.007202: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:25:54.111559: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:54.162713: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:54.162925: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:54.162984: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:54.163214: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:54.163330: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:54.163763: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:54.293920: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:54.294021: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:54.294040: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:54.294305: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:54.294411: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:54.294849: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:25:54.497149: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:25:54.812875: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:55.232251: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:55.232541: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:55.232648: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:55.232966: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:55.233107: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:55.233651: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:55.492402: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:55.492545: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:55.492993: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:55.493306: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:55.493826: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:55.494701: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:25:55.631824: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:25:55.912000: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:56.167050: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:56.167324: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:56.167418: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:56.167712: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:56.167855: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:56.168379: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:56.190372: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:56.190957: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:56.191116: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:56.191383: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:56.191871: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:56.192775: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:25:56.680343: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:25:56.684883: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:57.414862: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:57.414935: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:57.414950: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:57.415158: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:57.415238: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:57.419717: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+2021-11-28 23:25:58.166839: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:58.196890: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:58.197097: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:58.197157: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:58.197386: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:58.197491: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:58.197921: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:58.495204: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:58.495462: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:58.495572: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:58.495826: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:58.496006: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:58.496518: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:25:58.668548: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:25:58.935636: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:25:59.425199: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:25:59.425490: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:25:59.425587: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:25:59.426251: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:25:59.426845: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:25:59.427421: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:00.116645: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:00.529889: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:00.530002: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:00.530040: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:00.530267: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:00.530389: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:00.530889: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:00.746264: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:00.747070: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:00.747259: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:00.747344: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:00.747584: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:00.752060: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:00.752609: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:00.801887: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:01.027808: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:01.028456: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:01.028614: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:01.028931: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:01.029516: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:01.030454: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:01.420042: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:01.621321: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:01.621604: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:01.621701: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:01.622017: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:01.622429: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:01.625047: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:01.637251: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:02.011766: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:02.011864: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:02.011891: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:02.012112: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:02.012187: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:02.012599: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:02.124312: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:02.415696: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:02.415977: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:02.416088: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:02.417408: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:02.417621: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:02.418918: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:02.723325: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:02.901490: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:02.902134: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:02.902303: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:02.902639: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:02.903558: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:02.904509: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:02.949509: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:02.949934: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:02.950072: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:02.950403: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:02.950626: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:02.951999: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:03.235293: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:26:03.237008: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:26:03.343390: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:26:03.651561: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 776 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:03.844992: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:03.845070: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:03.845082: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:03.845292: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:03.845334: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:03.845729: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:03.848101: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:03.848160: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:03.848176: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:03.848401: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:03.848487: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:03.848940: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:04.132407: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:26:04.430771: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-11-28 23:26:04.486916: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:10.062755: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:10.062906: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:10.063334: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:10.063631: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:10.064121: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:10.065123: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:10.594896: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-11-28 23:26:11.874260: E tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+2021-11-28 23:26:11.874829: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: instance-1
+2021-11-28 23:26:11.874910: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: instance-1
+2021-11-28 23:26:11.875149: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: Not found: was unable to find libcuda.so DSO loaded into this program
+2021-11-28 23:26:11.875723: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 460.73.1
+2021-11-28 23:26:11.876748: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-11-28 23:26:12.659811: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+Traceback (most recent call last):
+  File "kmeans.py", line 119, in <module>
+    r1_val,r2_val,rl_val = uml_summary(x,index,kind=dataset,model=transformer)
+  File "kmeans.py", line 94, in uml_summary
+    text_emb = models[model].encode(text)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/SentenceTransformer.py", line 157, in encode
+    out_features = self.forward(features)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/models/Transformer.py", line 51, in forward
+    output_states = self.auto_model(**trans_features, return_dict=False)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/roberta/modeling_roberta.py", line 860, in forward
+    return_dict=return_dict,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/roberta/modeling_roberta.py", line 531, in forward
+    output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/roberta/modeling_roberta.py", line 415, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/roberta/modeling_roberta.py", line 344, in forward
+    output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/roberta/modeling_roberta.py", line 260, in forward
+    attention_scores = attention_scores + attention_mask
+RuntimeError: [enforce fail at CPUAllocator.cpp:68] . DefaultCPUAllocator: can't allocate memory: you tried to allocate 402653184 bytes. Error code 12 (Cannot allocate memory)
+Traceback (most recent call last):
+  File "kmeans.py", line 119, in <module>
+    r1_val,r2_val,rl_val = uml_summary(x,index,kind=dataset,model=transformer)
+  File "kmeans.py", line 94, in uml_summary
+    text_emb = models[model].encode(text)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/SentenceTransformer.py", line 157, in encode
+    out_features = self.forward(features)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/models/Transformer.py", line 51, in forward
+    output_states = self.auto_model(**trans_features, return_dict=False)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 560, in forward
+    return_dict=return_dict,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 346, in forward
+    **kwargs,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 304, in forward
+    output_attentions=output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 245, in forward
+    output_attentions=output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 187, in forward
+    attention_probs = nn.Softmax(dim=-1)(attention_scores)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/activation.py", line 1226, in forward
+    return F.softmax(input, self.dim, _stacklevel=5)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/functional.py", line 1680, in softmax
+    ret = input.softmax(dim)
+RuntimeError: [enforce fail at CPUAllocator.cpp:68] . DefaultCPUAllocator: can't allocate memory: you tried to allocate 219414528 bytes. Error code 12 (Cannot allocate memory)
+Traceback (most recent call last):
+  File "kmeans.py", line 119, in <module>
+    r1_val,r2_val,rl_val = uml_summary(x,index,kind=dataset,model=transformer)
+  File "kmeans.py", line 94, in uml_summary
+    text_emb = models[model].encode(text)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/SentenceTransformer.py", line 157, in encode
+    out_features = self.forward(features)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/models/Transformer.py", line 51, in forward
+    output_states = self.auto_model(**trans_features, return_dict=False)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 590, in forward
+    output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 475, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 407, in forward
+    output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 325, in forward
+    attention_scores = attention_scores + attention_mask
+RuntimeError: [enforce fail at CPUAllocator.cpp:68] . DefaultCPUAllocator: can't allocate memory: you tried to allocate 155285952 bytes. Error code 12 (Cannot allocate memory)
+Traceback (most recent call last):
+  File "kmeans.py", line 119, in <module>
+    r1_val,r2_val,rl_val = uml_summary(x,index,kind=dataset,model=transformer)
+  File "kmeans.py", line 94, in uml_summary
+    text_emb = models[model].encode(text)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/SentenceTransformer.py", line 157, in encode
+    out_features = self.forward(features)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/models/Transformer.py", line 51, in forward
+    output_states = self.auto_model(**trans_features, return_dict=False)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 560, in forward
+    return_dict=return_dict,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 346, in forward
+    **kwargs,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 304, in forward
+    output_attentions=output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 245, in forward
+    output_attentions=output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/mpnet/modeling_mpnet.py", line 184, in forward
+    attention_scores = attention_scores + attention_mask
+RuntimeError: [enforce fail at CPUAllocator.cpp:68] . DefaultCPUAllocator: can't allocate memory: you tried to allocate 329270784 bytes. Error code 12 (Cannot allocate memory)
+Traceback (most recent call last):
+  File "kmeans.py", line 119, in <module>
+    r1_val,r2_val,rl_val = uml_summary(x,index,kind=dataset,model=transformer)
+  File "kmeans.py", line 94, in uml_summary
+    text_emb = models[model].encode(text)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/SentenceTransformer.py", line 157, in encode
+    out_features = self.forward(features)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/models/Transformer.py", line 51, in forward
+    output_states = self.auto_model(**trans_features, return_dict=False)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/albert/modeling_albert.py", line 727, in forward
+    return_dict=return_dict,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/albert/modeling_albert.py", line 472, in forward
+    output_hidden_states,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/albert/modeling_albert.py", line 419, in forward
+    layer_output = albert_layer(hidden_states, attention_mask, head_mask[layer_index], output_attentions)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/albert/modeling_albert.py", line 393, in forward
+    attention_output[0],
+  File "/opt/conda/lib/python3.7/site-packages/transformers/modeling_utils.py", line 2360, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/albert/modeling_albert.py", line 401, in ff_chunk
+    ffn_output = self.activation(ffn_output)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/activations.py", line 42, in gelu_new
+    return 0.5 * x * (1.0 + torch.tanh(math.sqrt(2.0 / math.pi) * (x + 0.044715 * torch.pow(x, 3.0))))
+RuntimeError: [enforce fail at CPUAllocator.cpp:68] . DefaultCPUAllocator: can't allocate memory: you tried to allocate 39321600 bytes. Error code 12 (Cannot allocate memory)
+Traceback (most recent call last):
+  File "kmeans.py", line 119, in <module>
+    r1_val,r2_val,rl_val = uml_summary(x,index,kind=dataset,model=transformer)
+  File "kmeans.py", line 94, in uml_summary
+    text_emb = models[model].encode(text)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/SentenceTransformer.py", line 157, in encode
+    out_features = self.forward(features)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/models/Transformer.py", line 51, in forward
+    output_states = self.auto_model(**trans_features, return_dict=False)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 557, in forward
+    return_dict=return_dict,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 328, in forward
+    x=hidden_state, attn_mask=attn_mask, head_mask=head_mask[i], output_attentions=output_attentions
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 287, in forward
+    ffn_output = self.ffn(sa_output)  # (bs, seq_length, dim)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 238, in forward
+    return apply_chunking_to_forward(self.ff_chunk, self.chunk_size_feed_forward, self.seq_len_dim, input)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/modeling_utils.py", line 2360, in apply_chunking_to_forward
+    return forward_fn(*input_tensors)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 242, in ff_chunk
+    x = self.activation(x)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/functional.py", line 1556, in gelu
+    return torch._C._nn.gelu(input)
+RuntimeError: [enforce fail at CPUAllocator.cpp:68] . DefaultCPUAllocator: can't allocate memory: you tried to allocate 50331648 bytes. Error code 12 (Cannot allocate memory)
+Traceback (most recent call last):
+  File "kmeans.py", line 119, in <module>
+    r1_val,r2_val,rl_val = uml_summary(x,index,kind=dataset,model=transformer)
+  File "kmeans.py", line 94, in uml_summary
+    text_emb = models[model].encode(text)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/SentenceTransformer.py", line 157, in encode
+    out_features = self.forward(features)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/models/Transformer.py", line 51, in forward
+    output_states = self.auto_model(**trans_features, return_dict=False)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 557, in forward
+    return_dict=return_dict,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 328, in forward
+    x=hidden_state, attn_mask=attn_mask, head_mask=head_mask[i], output_attentions=output_attentions
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 277, in forward
+    output_attentions=output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 207, in forward
+    scores = scores.masked_fill(mask, -float("inf"))  # (bs, n_heads, q_length, k_length)
+RuntimeError: [enforce fail at CPUAllocator.cpp:68] . DefaultCPUAllocator: can't allocate memory: you tried to allocate 390070272 bytes. Error code 12 (Cannot allocate memory)
