@@ -535,3 +535,93 @@ Traceback (most recent call last):
   File "/opt/conda/lib/python3.7/site-packages/transformers/models/distilbert/modeling_distilbert.py", line 207, in forward
     scores = scores.masked_fill(mask, -float("inf"))  # (bs, n_heads, q_length, k_length)
 RuntimeError: [enforce fail at CPUAllocator.cpp:68] . DefaultCPUAllocator: can't allocate memory: you tried to allocate 390070272 bytes. Error code 12 (Cannot allocate memory)
+['kmeans.py', 'paraphrase-MiniLM-L3-v2', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.65
+Rouge 2 :  9.82
+Rouge L :  19.37
+___
+['kmeans.py', 'paraphrase-MiniLM-L3-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  75.18
+Rouge 2 :  49.0
+Rouge L :  41.59
+___
+['kmeans.py', 'all-MiniLM-L6-v2', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.32
+Rouge 2 :  9.33
+Rouge L :  18.76
+___
+['kmeans.py', 'all-distilroberta-v1', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.38
+Rouge 2 :  9.4
+Rouge L :  18.8
+___
+['kmeans.py', 'multi-qa-distilbert-cos-v1', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.04
+Rouge 2 :  9.22
+Rouge L :  18.64
+___
+['kmeans.py', 'distiluse-base-multilingual-cased-v1', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.22
+Rouge 2 :  9.18
+Rouge L :  18.7
+___
+['kmeans.py', 'distiluse-base-multilingual-cased-v2', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.12
+Rouge 2 :  9.13
+Rouge L :  18.66
+___
+['kmeans.py', 'all-MiniLM-L6-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  76.92
+Rouge 2 :  50.25
+Rouge L :  42.18
+___
+['kmeans.py', 'paraphrase-albert-small-v2', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.97
+Rouge 2 :  9.85
+Rouge L :  19.42
+___
+['kmeans.py', 'distiluse-base-multilingual-cased-v1', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  75.4
+Rouge 2 :  50.36
+Rouge L :  41.9
+___
+['kmeans.py', 'all-MiniLM-L12-v2', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.39
+Rouge 2 :  9.35
+Rouge L :  18.74
+___
+['kmeans.py', 'paraphrase-multilingual-MiniLM-L12-v2', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.51
+Rouge 2 :  9.45
+Rouge L :  19.14
+___
+['kmeans.py', 'all-MiniLM-L12-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  75.68
+Rouge 2 :  49.45
+Rouge L :  41.87
+___
+['kmeans.py', 'paraphrase-multilingual-MiniLM-L12-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  75.11
+Rouge 2 :  49.13
+Rouge L :  41.58
+___
+['kmeans.py', 'multi-qa-mpnet-base-dot-v1', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.95
+Rouge 2 :  9.51
+Rouge L :  18.69
+___
+['kmeans.py', 'paraphrase-multilingual-mpnet-base-v2', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.17
+Rouge 2 :  9.29
+Rouge L :  18.89
+___
+['kmeans.py', 'all-mpnet-base-v2', 'cnn_dailymail', 'None'] 11490
+Rouge 1 :  30.14
+Rouge 2 :  9.21
+Rouge L :  18.68
+___
+['kmeans.py', 'paraphrase-multilingual-mpnet-base-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  75.02
+Rouge 2 :  49.1
+Rouge L :  41.56
+___
