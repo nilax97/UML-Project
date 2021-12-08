@@ -641,3 +641,188 @@ Rouge 1 :  30.11
 Rouge 2 :  9.26
 Rouge L :  18.65
 ___
+Traceback (most recent call last):
+  File "kmeans.py", line 53, in <module>
+    models[trans] = SentenceTransformer(trans,cache_folder='/mnt/disks/disk-1/data/models')
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/SentenceTransformer.py", line 84, in __init__
+    ignore_files=['flax_model.msgpack', 'rust_model.ot', 'tf_model.h5'])
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/util.py", line 426, in snapshot_download
+    model_info = _api.model_info(repo_id=repo_id, revision=revision)
+  File "/opt/conda/lib/python3.7/site-packages/huggingface_hub/hf_api.py", line 585, in model_info
+    r.raise_for_status()
+  File "/opt/conda/lib/python3.7/site-packages/requests/models.py", line 953, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/api/models/sentence-transformers/cnn_dailymail
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 05:47:14.421020: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 05:47:14.954138: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 05:47:15.403680: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 05:54:10.945914: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 05:54:11.677518: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 776 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 05:54:11.922541: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+['kmeans.py', 'paraphrase-albert-small-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  30.99
+Rouge 2 :  9.92
+Rouge L :  19.5
+___
+['kmeans.py', 'multi-qa-mpnet-base-dot-v1', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  31.37
+Rouge 2 :  9.78
+Rouge L :  18.94
+___
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 17:53:44.295324: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 17:53:44.806979: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 17:53:45.256561: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+Traceback (most recent call last):
+  File "kmeans.py", line 123, in <module>
+    r1_val,r2_val,rl_val = uml_summary(x,index,kind=ds,model=trans)
+  File "kmeans.py", line 102, in uml_summary
+    text_emb = models[model].encode(text)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/SentenceTransformer.py", line 157, in encode
+    out_features = self.forward(features)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/container.py", line 141, in forward
+    input = module(input)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/sentence_transformers/models/Transformer.py", line 51, in forward
+    output_states = self.auto_model(**trans_features, return_dict=False)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 1006, in forward
+    return_dict=return_dict,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 590, in forward
+    output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 475, in forward
+    past_key_value=self_attn_past_key_value,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 407, in forward
+    output_attentions,
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/transformers/models/bert/modeling_bert.py", line 328, in forward
+    attention_probs = nn.Softmax(dim=-1)(attention_scores)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/module.py", line 1102, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/modules/activation.py", line 1226, in forward
+    return F.softmax(input, self.dim, _stacklevel=5)
+  File "/opt/conda/lib/python3.7/site-packages/torch/nn/functional.py", line 1680, in softmax
+    ret = input.softmax(dim)
+KeyboardInterrupt
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 17:56:31.015842: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 17:56:31.524652: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 17:56:31.974947: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+['kmeans.py', 'paraphrase-MiniLM-L3-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  30.6
+Rouge 2 :  9.81
+Rouge L :  19.37
+___
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 18:13:24.510344: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 18:13:25.001150: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 18:13:25.450643: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+['kmeans.py', 'paraphrase-multilingual-MiniLM-L12-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  30.55
+Rouge 2 :  9.54
+Rouge L :  19.22
+___
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 19:02:30.304461: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 19:02:30.792512: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 19:02:31.243628: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+['kmeans.py', 'all-MiniLM-L12-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  30.6
+Rouge 2 :  9.45
+Rouge L :  18.88
+___
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 19:49:31.910548: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 19:49:32.387387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 19:49:32.833244: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+['kmeans.py', 'all-distilroberta-v1', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  30.65
+Rouge 2 :  9.52
+Rouge L :  18.92
+___
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 20:55:02.196507: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 20:55:02.727403: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 20:55:03.170277: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+['kmeans.py', 'all-MiniLM-L6-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  30.52
+Rouge 2 :  9.43
+Rouge L :  18.85
+___
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 21:22:11.572825: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 21:22:12.080719: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 21:22:12.532062: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+['kmeans.py', 'distiluse-base-multilingual-cased-v1', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  30.55
+Rouge 2 :  9.33
+Rouge L :  18.82
+___
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-07 22:30:24.830036: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-07 22:30:25.310299: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-07 22:30:25.762283: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+['kmeans.py', 'paraphrase-multilingual-mpnet-base-v2', 'cnn_dailymail', 'EnglishStemmer'] 11490
+Rouge 1 :  30.24
+Rouge 2 :  9.34
+Rouge L :  18.97
+___
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-08 00:40:52.697494: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-08 00:40:53.156778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-08 00:40:53.607001: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+Terminated
+Terminated
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+INFO:absl:Reusing dataset cnn_dailymail (/mnt/disks/disk-1/data/cnn_dailymail/3.1.0)
+INFO:absl:Constructing tf.data.Dataset cnn_dailymail for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/cnn_dailymail/3.1.0
+2021-12-08 01:37:27.200853: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-08 01:37:27.703857: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-08 01:37:28.149936: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+Terminated
+Terminated

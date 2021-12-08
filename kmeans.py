@@ -1,8 +1,6 @@
-import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
-
 import tensorflow_datasets as tfds
 import tensorflow as tf
+import os
 import struct
 import hashlib
 import os
@@ -41,20 +39,22 @@ def get_sent_list(text,stem=None):
     for sent in sents:
         words = word_tokenize(sent)
         word_stem = [stemmer.stem(w) for w in words]
-        ans.append(str(" ".join(str(word_stem))))
+        ans.append(str(" ".join(word_stem)))
     return ans
 
-transformer = sys.argv[1]
+## Model features include an encode function -> takes a list of sentences. Returns a list of embeddings (all same dim)
+transformers = [sys.argv[1]]
 
 models = dict()
 device = torch.device("cpu")
 # device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-models[transformer] = SentenceTransformer(transformer,cache_folder='/mnt/disks/disk-1/data/models')
-models[transformer]._target_device = device
+for trans in transformers:
+    models[trans] = SentenceTransformer(trans,cache_folder='/mnt/disks/disk-1/data/models')
+    models[trans]._target_device = device
 
-# # V = list of embeddings. k = target size of summary
-# # Returns a list of sentence indices
+## V = list of embeddings. k = target size of summary
+## Returns a list of sentence indices
 
 def generate_summary(V, k):
     if k >= len(V):
@@ -77,9 +77,6 @@ def generate_summary(V, k):
         k -= 1
     return centers
 
-
-stem = sys.argv[3]
-
 def uml_summary(x,index,kind="cnn_dailymail",model="all-MiniLM-L6-v2"):
     if kind == "cnn_dailymail":
         key1 = 'article'
@@ -87,42 +84,49 @@ def uml_summary(x,index,kind="cnn_dailymail",model="all-MiniLM-L6-v2"):
     elif kind == "scientific_papers/arxiv" or kind == "scientific_papers/pubmed":
         key1 = 'article'
         key2 = 'abstract'
+        
+    stemmer = sys.argv[3]
     text = tensor_to_string(x[key1])
-    text = get_sent_list(text,stem)
+    text = get_sent_list(text,stemmer)
     summary = tensor_to_string(x[key2])
-    summary = get_sent_list(summary,stem)
-    text_emb = models[model].encode(text)
-    filename = str(index) + "_" + model + "_" + stem + ".pickle"
+    summary = get_sent_list(summary,stemmer)
+    
+    filename = str(index) + "_" + model + "_" + stemmer + ".pickle"
     folderpath = os.path.join("/mnt/disks/disk-1/data/pickle",kind)
-    if not os.path.exists(folderpath):
-        os.mkdir(folderpath)
     filepath = os.path.join("/mnt/disks/disk-1/data/pickle",kind,filename)
-    with open(filepath, 'wb') as handle:
-        pickle.dump(text_emb, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    
+    if os.path.exists(filepath):
+        with open(filepath, 'rb') as handle:
+            text_emb = pickle.load(handle)
+    else:
+        text_emb = models[model].encode(text)
+        with open(filepath, 'wb') as handle:
+            pickle.dump(text_emb, handle, protocol=pickle.HIGHEST_PROTOCOL)
+
     gen_sum = [text[x] for x in generate_summary(text_emb,len(summary))]
     scores = scorer.score(" ".join(summary)," ".join(gen_sum))
     return scores["rouge1"].fmeasure, scores["rouge2"].fmeasure, scores["rougeL"].fmeasure
 
-dataset = sys.argv[2]
-
+datasets = [sys.argv[2]]
 scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2','rougeL'], use_stemmer=True)
-
-train, val, test = tfds.load(name=dataset, 
-                      split=["train", "validation", "test"], 
-                      data_dir="/mnt/disks/disk-1/data")
-
-r1 = []
-r2 = []
-rl = []
-index = 0
-for x in list(test):
-    r1_val,r2_val,rl_val = uml_summary(x,index,kind=dataset,model=transformer)
-    index += 1
-    r1.append(r1_val)
-    r2.append(r2_val)
-    rl.append(rl_val)
-print(sys.argv,index)
-print("Rouge 1 : ",np.round(np.mean(np.asarray(r1))*100,2))
-print("Rouge 2 : ",np.round(np.mean(np.asarray(r2))*100,2))
-print("Rouge L : ",np.round(np.mean(np.asarray(rl))*100,2))
-print("___")
+for ds in datasets:
+    for trans in transformers:
+        train, val, test = tfds.load(name=ds, 
+                              split=["train", "validation", "test"], 
+                              data_dir="/mnt/disks/disk-1/data")
+        
+        r1 = []
+        r2 = []
+        rl = []
+        index = 0
+        for x in list(test):
+            r1_val,r2_val,rl_val = uml_summary(x,index,kind=ds,model=trans)
+            index += 1
+            r1.append(r1_val)
+            r2.append(r2_val)
+            rl.append(rl_val)
+        print(sys.argv,index)
+        print("Rouge 1 : ",np.round(np.mean(np.asarray(r1))*100,2))
+        print("Rouge 2 : ",np.round(np.mean(np.asarray(r2))*100,2))
+        print("Rouge L : ",np.round(np.mean(np.asarray(rl))*100,2))
+        print("___")
