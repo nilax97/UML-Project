@@ -356,3 +356,22 @@ INFO:absl:Constructing tf.data.Dataset scientific_papers for split ['train', 'va
 To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
 2021-12-10 01:42:12.146413: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
 2021-12-10 01:42:12.600209: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/scientific_papers/arxiv/1.1.1
+INFO:absl:Reusing dataset scientific_papers (/mnt/disks/disk-1/data/scientific_papers/arxiv/1.1.1)
+INFO:absl:Constructing tf.data.Dataset scientific_papers for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/scientific_papers/arxiv/1.1.1
+2021-12-10 18:13:38.590186: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-10 18:13:40.437618: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-10 18:13:41.018394: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+['pagerank.py', 'multi-qa-distilbert-cos-v1', 'scientific_papers/arxiv', 'None'] 6440
+Rouge 1 :  34.72
+Rouge 2 :  9.92
+Rouge L :  18.07
+___
+INFO:absl:Load dataset info from /mnt/disks/disk-1/data/scientific_papers/pubmed/1.1.1
+INFO:absl:Reusing dataset scientific_papers (/mnt/disks/disk-1/data/scientific_papers/pubmed/1.1.1)
+INFO:absl:Constructing tf.data.Dataset scientific_papers for split ['train', 'validation', 'test'], from /mnt/disks/disk-1/data/scientific_papers/pubmed/1.1.1
+2021-12-10 20:29:47.316641: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-12-10 20:29:47.849011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38464 MB memory:  -> device: 0, name: A100-SXM4-40GB, pci bus id: 0000:00:04.0, compute capability: 8.0
+2021-12-10 20:29:48.346412: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
